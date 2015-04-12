@@ -4,6 +4,7 @@ into a CSV file.
 
 # Directory Structure #
 -------------
+```
   ./ScriptTest/data7/subdir7/data-98765.xml
   ./ScriptTest/data1/subdir1/data-4352435.xml
   ./ScriptTest/data1/data2/subdir2/data-643478.xml
@@ -12,9 +13,11 @@ into a CSV file.
   ./ScriptTest/data10/subdir10/subdir9/data-6327789928.xml
   ./ScriptTest/data5/subdir5/data-231324.xml
   ./ScriptTest/data5/data6/subdir6/data-467368.xml
+```
 
 # Sample XML Data #
 -------------
+```
   <?xml version="1.0" encoding="utf-8" ?>
   <product uid="0004">
         <title>The Lord of the Rings: The ellowship of the Ring</title>
@@ -29,6 +32,7 @@ into a CSV file.
                 <width>1600</width>
         </asset>
   </product>
+```
 
 # Usage #
 ----------

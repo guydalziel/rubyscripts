@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<product uid="0002">
+	<title>Oblivion</title>
+	<actor>Tom Cruise</actor>
+	<director>Joseph Kosinski</director>
+	<country>CANADA</country>
+	<asset>
+		<format>DHXHD</format>
+		<bitrate>128000.0 Kbps</bitrate>
+		<fps>29.5</fps>
+		<aspect>14:3</aspect>
+		<width>1180</width>
+	</asset>
+</product>

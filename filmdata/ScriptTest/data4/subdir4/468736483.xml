@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<product uid="0009">
+	<title>Azhagiya Tamizh Magan</title>
+	<actor>Vijay</actor>
+	<director>George</director>
+	<country>INDIA</country>
+	<asset>
+		<format>DNXHD32</format>
+		<bitrate>124.9 Kbps</bitrate>
+		<fps>12.1</fps>
+		<aspect>7:3</aspect>
+		<width>65353</width>
+	</asset>
+</product>

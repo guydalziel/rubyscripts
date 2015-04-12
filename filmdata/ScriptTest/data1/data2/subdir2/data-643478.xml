@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<product uid="0010">
+	<title>The Twilight Saga: Breaking Dawn - Part 2</title>
+	<actor>Robert Pattinson , Kristen Stewart</actor>
+	<director>Bill Condon</director>
+	<country>BRAZIL</country>
+	<asset>
+		<format>IMX</format>
+		<bitrate>23.5 Kbps</bitrate>
+		<fps>15.6</fps>
+		<aspect>8:4</aspect>
+		<width>76754</width>
+	</asset>
+</product>

@@ -1,6 +1,6 @@
-# Overview #
+## Overview ##
 Converts XML data from singular XML files located within subdirectories into a CSV file.
-# Directory Structure #
+## Directory Structure ##
 ```
   ./ScriptTest/data7/subdir7/data-98765.xml
   ./ScriptTest/data1/subdir1/data-4352435.xml
@@ -11,7 +11,7 @@ Converts XML data from singular XML files located within subdirectories into a C
   ./ScriptTest/data5/subdir5/data-231324.xml
   ./ScriptTest/data5/data6/subdir6/data-467368.xml
 ```
-# Sample XML Data #
+## Sample XML Data ##
 ```
   <?xml version="1.0" encoding="utf-8" ?>
   <product uid="0004">
@@ -29,7 +29,7 @@ Converts XML data from singular XML files located within subdirectories into a C
   </product>
 ```
 
-# Usage #
+## Usage ##
 The script is run from the root of the directory where the XML files are located with no options. Conversion is automatic.
 ```
   bash-4.3$ ls
@@ -40,7 +40,7 @@ The script is run from the root of the directory where the XML files are located
 ```
 The XML data has been converted to a CSV file.
 
-# CSV Output #
+## CSV Output ##
 ```
   UID,Title,Actor,Director,Country,File Path,Bit Rate,FPS,Aspect Ratio
   0006,"Skulle det dukke opp flere lik, så er det bare å inge",Aud Schønemann,Knut Bohwim,NORWAY,/home/guydalziel/src/repositories/github/rubyscripts/filmdata/ScriptTest/data7/subdir7/0006/PRORES,23495.9 Kbps,22.74,3:2

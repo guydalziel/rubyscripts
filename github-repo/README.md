@@ -10,7 +10,7 @@ Usage: github-repo.rb [reponame] [options]
 ## Example ##
 ```
 Providing a single argument to the script will create a repository with that name.
-Executing the script without ang arguments will create a repository with the name
+Executing the script without any arguments will create a repository with the name
 of the current directory.
 
 [gdalziel@e3-1230v2 github-repo]$ ./github-repo.rb examplerepo

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<product uid="0008">
+	<title>Vennila Kabadi Kuzhu</title>
+	<actor>Nagesh</actor>
+	<director>Sushinthran</director>
+	<country>INDIA</country>
+	<asset>
+		<format>XDCAMMXF</format>
+		<bitrate>985.9 Kbps</bitrate>
+		<fps>17.1</fps>
+		<aspect>5:4</aspect>
+		<width>6352</width>
+	</asset>
+</product>

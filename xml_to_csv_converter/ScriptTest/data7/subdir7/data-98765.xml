@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<product uid="0006">
+	<title>Skulle det dukke opp flere lik, så er det bare å inge</title>
+	<actor>Aud Schønemann</actor>
+	<director>Knut Bohwim</director>
+	<country>NORWAY</country>
+	<asset>
+		<format>PRORES</format>
+		<bitrate>23495.9 Kbps</bitrate>
+		<fps>22.74</fps>
+		<aspect>3:2</aspect>
+		<width>1000</width>
+	</asset>
+</product>

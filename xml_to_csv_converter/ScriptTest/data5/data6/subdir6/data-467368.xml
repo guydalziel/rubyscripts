@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<product uid="0007">
+	<title>The Hunger Games: Catching Fire</title>
+	<actor>Laisse Tomber Tes Problèmes</actor>
+	<director>Jennifer Lawrence</director>
+	<country>INDONESIA</country>
+	<asset>
+		<format>XDCAM</format>
+		<bitrate>1995.9 Kbps</bitrate>
+		<fps>21.6</fps>
+		<aspect>2:1</aspect>
+		<width>7090</width>
+	</asset>
+</product>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<product uid="0004">
+	<title>The Lord of the Rings: The ellowship of the Ring</title>
+	<actor>Não Precisa</actor>
+	<director>Alex</director>
+	<country>United Kingdom</country>
+	<asset>
+		<format>ANIMATION</format>
+		<bitrate>6899.0 Kbps</bitrate>
+		<fps>25</fps>
+		<aspect>16:8</aspect>
+		<width>1600</width>
+	</asset>
+</product>

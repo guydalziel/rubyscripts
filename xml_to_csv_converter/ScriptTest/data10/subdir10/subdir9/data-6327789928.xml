@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<product uid="0005">
+	<title>The Amazing Spider-Man 2</title>
+	<actor>L'Eté Toute L'Année</actor>
+	<director>Sonal</director>
+	<country>Russia</country>
+	<asset>
+		<format>IMXMXF</format>
+		<bitrate>4899.6 Kbps</bitrate>
+		<fps>26.7</fps>
+		<aspect>4:8</aspect>
+		<width>2800</width>
+	</asset>
+</product>

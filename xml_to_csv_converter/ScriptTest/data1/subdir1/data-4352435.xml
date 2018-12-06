@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<product uid="00011661857421">
+	<title>The Wolverine</title>
+	<actor>Hugh Jackman</actor>
+	<director>James Mangold</director>
+	<country>US</country>
+	<asset>
+		<format>MXF</format>
+		<bitrate>9000.0 Kbps</bitrate>
+		<fps>25</fps>
+		<aspect>16:9</aspect>
+		<width>1080</width>
+	</asset>
+</product>

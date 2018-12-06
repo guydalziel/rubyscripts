@@ -1,11 +1,11 @@
+# OpenSSL Encryption & Decryption Scripts
 ## Overview ##
-A couple of simple scripts to encrypt/decrypt files with a password via OpenSSL.
+Scripts to encrypt/decrypt files with a password via OpenSSL.
 ## Usage ##
 ```
 Usage:
   encrypt <filename>
   decrypt <filename.aes>
-
 ```
 ## Example ##
 ```

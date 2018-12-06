@@ -1,14 +1,12 @@
-#!/usr/bin/ruby
+#!/usr/bin/env ruby
 #
-#  Title:         filmdata.rb
-#  Description:   Converts XML product data from singular XML files located within
-#                 various subdirectories into a CSV file.
+#  Title:         xml2csv.rb
+#  Description:   Converts XML data from singular XML files located within various
+#                 subdirectories into a CSV file.
 #  Author:        Guy Dalziel
 #  Date:          20150102
 #  Version:       0.1
-#  Notes:         No modification of data is performed. This is simply a conversion
-#                 from XML to CSV.
-#                 If tags exist but the data is missing, the resulting data for that
+#  Notes:         If tags exist but the data is missing, the resulting data for that
 #                 tag will be 'Unspecified'.
 #
 
@@ -19,7 +17,7 @@ include REXML
 
 product = []
 
-CSV.open("filmdata.csv","w") do |csv|
+CSV.open("xml2csv.csv","w") do |csv|
   csv << ["UID", "Title", "Actor", "Director", "Country", "File Path", "Bit Rate", "FPS", "Aspect Ratio"]
   Dir.glob("**/data-*.xml").each do |file|      #Search recusively from root of ScriptTest
     doc = Document.new(File.read(file))

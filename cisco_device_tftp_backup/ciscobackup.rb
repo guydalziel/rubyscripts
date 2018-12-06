@@ -1,4 +1,4 @@
-#!/usr/bin/ruby
+#!/usr/bin/env ruby
 #
 # Title:        ciscobackup.rb
 # Description:  Copies startup-config from cisco devices specified in
@@ -7,8 +7,8 @@
 # Author:       Guy Dalziel
 # Date:         20150315
 # Version:      0.1
-# Notes:        Each devices requires its startup-config to be made available
-#               via TFTP. The following commands achieve this:
+# Notes:        Each device requires its startup-config to be made available
+#               via TFTP:
 #
 #               (from global config)
 #                 access-list 55 remark PERMIT access for backup via TFTP
@@ -18,7 +18,7 @@
 #               startup-config will now be available to 10.20.30.5 via TFTP.
 #
 #               This script is rewritten in Ruby from Steve Cowles' Bash script.
-#               This version provides a config file to specify devices from in
+#               This script provides a config file to specify devices from in
 #               order to provide easier management in larger environments.
 #
 

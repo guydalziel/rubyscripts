@@ -1,10 +1,17 @@
 #!/usr/bin/env ruby
+#
+# Title:       encrypt
+# Description: Encrypts a specified file via OpenSSL.
+# Author:      Guy Dalziel
+# Date:        20181206
+# Version:     1.0.0
+#
 
 if ARGV.count == 0
     puts "No arguments provided. Please provide a filename"
     exit
 elsif ARGV.count == 1
-  filename = ARGV[0]        # An argument has been provided. This will be the repository name
+  filename = ARGV[0]
 elsif ARGV.count > 1
   puts "Error: too many arguments"
   exit

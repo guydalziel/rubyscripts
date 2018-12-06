@@ -1,0 +1,17 @@
+#!/usr/bin/env ruby
+
+if ARGV.count == 0
+    puts "No arguments provided. Please provide a filename"
+    exit
+elsif ARGV.count == 1
+  filename = ARGV[0]        # An argument has been provided. This will be the repository name
+elsif ARGV.count > 1
+  puts "Error: too many arguments"
+  exit
+end
+
+input = filename.dup
+input.gsub!(/\s/,'\ ')
+output = input.sub(/$/,'.aes')
+
+`openssl aes-256-cbc -e -a -p -md sha1 -in #{input} -out #{output}`

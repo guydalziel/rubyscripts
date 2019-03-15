@@ -1,11 +1,21 @@
 #!/usr/bin/env ruby
 #
-# Title:       encrypt
-# Description: Encrypts a specified file via OpenSSL.
-# Author:      Guy Dalziel
-# Date:        20181206
-# Version:     1.0.0
+# Description: Encrypts a file with a password via OpenSSL.
+# Author: Guy Dalziel
 #
+require 'optparse'
+
+options = {noretain:true} # Set default values for conditional handling
+OptionParser.new do |opts|
+  opts.banner = "Usage: encrypt [options] <filename>"
+
+  opts.separator ""
+  opts.separator "Options:"
+
+  opts.on("-r", "--retain", "Retain original file after encryption.") do |r|
+    options[:noretain] = r
+  end
+end.parse!
 
 if ARGV.count == 0
     puts "No arguments provided. Please provide a filename"
@@ -21,4 +31,8 @@ input = filename.dup
 input.gsub!(/\s/,'\ ')
 output = input.sub(/$/,'.aes')
 
-`openssl aes-256-cbc -e -a -p -md sha1 -in #{input} -out #{output}`
+system("openssl aes-256-cbc -e -a -p -md sha1 -in #{input} -out #{output} > /dev/null")
+
+if options[:noretain] == true
+    File.delete(filename)
+end

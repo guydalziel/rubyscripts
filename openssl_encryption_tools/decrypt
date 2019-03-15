@@ -1,11 +1,21 @@
 #!/usr/bin/env ruby
 #
-# Title:       decrypt
 # Description: Decrypts a file encrypted via OpenSSL.
-# Author:      Guy Dalziel
-# Date:        20181206
-# Version:     1.0.0
+# Author: Guy Dalziel
 #
+require 'optparse'
+
+options = {noretain:true} # Set default values for conditional handling
+OptionParser.new do |opts|
+  opts.banner = "Usage: decrypt [options] <filename.aes>"
+
+  opts.separator ""
+  opts.separator "Options:"
+
+  opts.on("-r", "--retain", "Retain original file after decryption.") do |r|
+    options[:noretain] = r
+  end
+end.parse!
 
 if ARGV.count == 0
     puts "No arguments provided. Please provide a filename"
@@ -21,4 +31,8 @@ input = filename.dup
 input.gsub!(/\s/,'\ ')
 output = input.gsub('.aes','')
 
-`openssl aes-256-cbc -d -a -p -md sha1 -in #{input} -out #{output}`
+system("openssl aes-256-cbc -d -a -p -md sha1 -in #{input} -out #{output} > /dev/null")
+
+if options[:noretain] == true
+    File.delete(filename)
+end
